@@ -57,7 +57,7 @@
 .manu-content {
     background-color: rgb(85, 27, 219);
     border: 2px solid rgb(85, 27, 219);
-    /* border-radius: 20px; */
+    border-radius: 20px;
     width: 100%;
 }
 
@@ -117,7 +117,7 @@ ol li{
 }
 @media screen and (min-width: 800px){
     .searchBox {
-        margin-left: 500px;
+        margin-left: 400px;
         margin-top: 2%;
     }
     }
@@ -154,6 +154,25 @@ ol li{
     margin-top: 10%;
 }
 
+
+.img {
+        width: 98%;
+        margin-left: 1%;
+        margin-top: 1%;
+        position: relative
+}
+
+.floatleft {
+    float: left;
+     width: 50%
+}
+.floatrigth {
+    float: left;
+     width: 50%
+}
+
+
+/* 
 .dropdown {
     position: absolute;
 }
@@ -200,4 +219,4 @@ ol li{
 }
 .show {
     display: block;
-}
+} */
