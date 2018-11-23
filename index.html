@@ -9,14 +9,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="mycss.css">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#showcontent").load("main.html");
+            $("#aboutttc").on('click',function(){
+                $("#showcontent").load("aboutttc.html");
+            });
+            $("#managTeam").on('click',function(){
+                $("#showcontent").load("manageTeam.html");
+            });
+            $("#intelligenceCenter").on('click',function(){
+                $("#showcontent").load("intelligenceCenter.html");
+            });
+            $("#law").on('click',function(){
+                $("#showcontent").load("law.html");
+            })
+        })
+    </script>
 </head>
 
 <body>
     <div class="containner">
         <div class="mycontain">
             &nbsp;
-            <div class="content">
+            <div class="main-manu">
                 <div class="main-content">
                     <br>
                     <div class="manu">
@@ -25,22 +42,11 @@
                                 <br>
                                 <br>
                             </div>
-                            <li><a href="#home">ໜ້າຫຼັກ</a></li>
-                            <li><a href="#">ກ່ຽວກັບ ວຄຄຂ</a></li>
-                            <li><a href="#contact">ຄະນະບໍລິຫານ</a></li>
-                            <li><a href="#about">ສູນແຫ່ງເປັນເລີດ</a></li>
-                            <li><a href="#about">ນິຕິກໍາ</a></li>
-                            <!-- <li>
-                                <div class="dropdown">
-                                    <button onclick="myFunction()" class="dropbtn">Dropdown <i class="fa fa-sort-down"
-                                            style="color:red"></i></button>
-                                    <div id="myDropdown" class="dropdown-content">
-                                        <a href="#home">Home</a>
-                                        <a href="#about">About</a>
-                                        <a href="#contact">Contact</a>
-                                    </div>
-                                </div>
-                            </li> -->
+                            <li><a href="index.html" class="pointerCursor">ໜ້າຫຼັກ</a></li>
+                            <li><a id="aboutttc" class="pointerCursor">ກ່ຽວກັບ ວຄຄຂ</a></li>
+                            <li><a id="managTeam"  class="pointerCursor">ຄະນະບໍລິຫານ</a></li>
+                            <li><a id="intelligenceCenter" class="pointerCursor">ສູນແຫ່ງເປັນເລີດ</a></li>
+                            <li><a id="law" class="pointerCursor">ນິຕິກໍາ</a></li>
                             <li style="text-align: right">
                                 <div class="searchBox">
                                     <form>
@@ -55,192 +61,11 @@
                 </div>
             </div>
         </div>
-        <div class="main">
-            
+        <div>
+
             <div style="margin-top: 3%">
                 <div class="main-content">
-                    <div class="main-side">
-                        <div class="mycontrol1">
-                            <h1>ຍີດີຕ້ອນຮັບເຂົ້າສູ່ຫ້ອງ IT</h1>
-                            <u>
-                                ວັນອັງຄານ ເດືອນພະຈີກ ປີ 2018
-                            </u>
-                            <hr class="divideLine">
-                        </div>
-                        <br>
-                        <div class="mycontrol1">
-                            <label>
-                                <h1>
-                                    <strong>
-                                        ສະພາບລວມ
-                                    </strong>
-                                </h1>
-                            </label>
-                            <br>
-                            <div style="">
-                                <div style="font-size: 30px; color: rgb(0, 183, 255); text-align: center">
-                                    ພິ​ທີ​ຕ້ອນ​ຮັບ​ຄະ​ນະ 3 ອົງ​ການ​ຈັດ​ຕັ້ງ​ມະ​ຫາ​ຊົນ ພະ​ແນກ​ສຶກ​ສາ​ທິ​ການ ແລະ
-                                    ກິ​ລາ​ແຂວງ​ຫົວ​ພັນທີ່​ມາ​ຢ້ຽມ​ຢາມ​ແລກ​ປ່ຽນ​ບົດ​ຮຽນ​ນຳ ວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ
-                                    ຄັ້ງ​ວັນ​ທີ 3 ສິງ​ຫາ
-                                    2018.
-                                </div>
-                                <br>
-                                &nbsp;&nbsp;&nbsp; ໃນ​ຕອນ​ເຊົ້າ​ຂອງວັນ​ສຸກ ວັນ​ທີ ວັນ​ທີ 3 ສິງ​ຫາ 2018 ທີ່​ສະ​ໂມ​ສອນ
-                                ວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ
-                                ແຂວງ​ຊຽງ​ຂວາງ ໄດ້​ຈັດພິ​ທີ​ຕ້ອນ​ຮັບ​ຄະ​ນະ 3 ອົງ​ການ​ຈັດ​ຕັ້ງ​ມະ​ຫາ​ຊົນ
-                                ພະ​ແນກ​ສຶກ​ສາ​ທິ​ການ ແລະ ກິ​ລາ​ແຂວງ​ຫົວ​ພັນ ທີ່​ມາ​ຢ້ຽມ​ຢາມ​ແລກ​ປ່ຽນ​ບົດ​ຮຽນ​ນຳ
-                                ວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ ພາຍ​ໃຕ້​ການ​ນຳ​ພາ​ຂອງ​ ທ່ານ ສົມ​ເພັດ ອິນ​ທະ​ສອນ ຮອງ​ຫົວ​ໜ້າ
-                                ພະ​ແນກ​ສຶກ​ສາ​ທິ​ການ ແລະ ກິ​ລາ​ແຂວງ​ຫົວ​ພັນ ແລະ ກ່າວ​ຕ້ອນ​ຮັບ​ຂອງ​ທ່ານ ອ​ຈ ວັນ​ນີ
-                                ຢ່າງ​ເຈຍ​ມົວ ເລ​ຂາ​ພັກ​ຮາກ​ຖານ ຜູ້​ອຳ​ນວຍ​ການ ວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ
-                                ພ້ອມ​ການ​ເຂົ້າ​ຮ່ວມ​ຂອງ​ ທ່ານ ຄະ​ນະ​ພັກ​ຮາກ​ຖານ, ຄະ​ນະ​ສະ​ຫະ​ພັນ ແລະ ຄະ​ນະ​ຮາກ​ຖານ ຂອງ
-                                3 ອົງ​ການ​ຈັດ​ຕັ້ງ. <br>
-                                &nbsp;&nbsp;&nbsp; ໃນ​ກອງ​ປະ​ຊຸມ​ໄດ້​ມີ​ການ​ແລກ​ປ່ຽນ ຖອດ​ຖອນບົດ​ຮຽນ
-                                ທາງ​ດ້ານ​ການ​ຈັດ​ຕັ້ງ​ປະ​ຕິ​ບັດ​ວຽກ​ງານ​ຂອງ 3 ອົງ​ການ​ຈັດ​ຕັ້ງ​ມະ​ຫາ​ຊົນ
-                                ເຊິ່ງ​ໃນ​ເບື້ອງ​ຕົ້ນ​ໄດ້​ຮັບ​ຟັງການ​ສະຫຼຸບ​ລວມ​ໂດຍ​ຫຍໍ້ການ​ຈັດ​ຕັ້ງ​ປະ​ຕິ​ບັດ​ວຽກ​ງານ​ຂອງ
-                                3 ອົງ​ການ​ຈັດ​ຕັ້ງ​ມະ​ຫາ​ຊົນ ຂອງວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ ຈາກ ສ​ຫ ຄຳ​ວົງ ອຸ​ດົມ​ສຸກ ເລ​ຂາ
-                                ຮາກ​ຖານ​ຊາວ​ໜຸ່ມ ວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ
-                                ຈາກ​ນັ້ນ​ຮັບ​ຟັງການ​ສະຫຼຸບ​ລວມ​ໂດຍ​ຫຍໍ້ການ​ຈັດ​ຕັ້ງ​ປະ​ຕິ​ບັດ​ວຽກ​ງານ​ຂອງ 3
-                                ອົງ​ການ​ຈັດ​ຕັ້ງ​ມະ​ຫາ​ຊົນ ຂອງພະ​ແນກ​ສຶກ​ສາ​ທິ​ການ ແລະ ກິ​ລາ​ແຂວງ​ຫົວ​ພັນ ຈາກ ສ​ຫ
-                                ວັນ​ສີ ສຸກ​ສ​ະ​ຫວັນ ເລ​ຂາ​ຊາວ​ໜຸ່ມພະ​ແນກ​ສຶກ​ສາ​ທິ​ການ ແລະ ກິ​ລາ​ແຂວງ​ຫົວ​ພັນ.
-                                <br>
-                                <div class="floatleft">
-                                    <img src="img/IMG_7408.JPG" alt="" class="img">
-                                </div>
-                                <div class="floatrigth">
-                                    <img src="img/IMG_7408.JPG" alt="" class="img">
-                                </div>
-                                <div class="floatleft">
-                                    <img src="img/IMG_7408.JPG" alt="" class="img">
-                                </div>
-                                <div class="floatrigth">
-                                    <img src="img/IMG_7408.JPG" alt="" class="img">
-                                </div>
-                            </div>
-                            <br>
-                            &nbsp;
-                            
-                            <div style="margin-top: 5%">
-                                <div style="font-size: 30px; color: rgb(0, 183, 255);">
-                                    &nbsp; ພິ​ທີ​ເປີດ​ຮຽນ​ທິດ​ສະ​ດີ​ການ​ເມືອງ ແລະ ການ​ປົກ​ຄອງ​ລະ​ບົບ​ກໍ່​ສ້າງ​ຊັ້ນ​ຕົ້ນ
-                                    ຮຸ່ນ​ທີ 1​ຂອງວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ ແຂວງ​ຊຽ​ຂວາງ
-                                </div>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;ໃນເວ​ລາ 1:00 ນາ​ທີ ຂອງວັນ​ທີ 1 ສິງ​ຫາ 2018 ຢູ່​ທີ່ສະ​ໂມ​ສອນ
-                                ວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ ໄດ້​ຈັດ​ພິ​ທີ​ເປີດ​ຮຽນ​ທິດ​ສະ​ດີ​ການ​ເມືອງ ແລະ
-                                ການ​ປົກ​ຄອງ​ລະ​ບົບ​ກໍ່​ສ້າງ​ຊັ້ນ​ຕົ້ນ ຮຸ່ນ​ທີ 1​ຂອງວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ ແຂວງ​ຊຽ​ຂວາງ
-                                ຂຶ້ນ​ພາຍ​ໃຕ້​ການ​ເປັນ​ປະ​ທານ​ຂອງ ​ທ່ານ ບົວ​ສອນ ສີ​ນວນ​ທອງ ຄະ​ນະ​ປະ​ຈຳ​ພັກ​ແຂວງ
-                                ຮອງ​ເຈົ້າ​ແຂວງ ແຂວງ​ຊຽງ​ຂວາງ ພ້ອມ​ທັງ​ການ​ເຂົ້າ​ຮ່ວມ​ຂອງ ທ່ານ ອ​ຈ ວັນ​ນີ ຢ່າງ​ເຈຍ​ມົວ
-                                ເລ​ຂາ​ພັກ​ຮາກ​ຖານ ຜູ້​ອຳ​ນວຍ​ການ ວິ​ທະ​ຍາ​ໄລ​ຄູ​ຄັງ​ໄຂ, ທ່ານ ບຸນ​ເລື່ອນ ວັນ​ນາ​ຮັກ
-                                ຜູ້​ອຳ​ນວຍກ​ານ ໂຮງ​ຮຽນ​ການ​ເມືອງ ແລະ ການ​ປົກ​ຄອງ​ແຂວງ​ຊຽ​ຂວາງ, ແລະ
-                                ບັນ​ດາ​ແຂກ​ທີ່​ຖືກ​ເຊີນ ຕະຫຼອດ​ຮອດ​ຄູ-ອາ​ຈານ ແລະ ນັກ​ສຶກ​ສາ ລວມ​ທັງ​ໝົດ 83 ກ່​ວາ​ສະ​ຫາຍ
-                                ເຊິ່ງກອງ​ປະ​ຊຸມ​ດັ່ງ​ກ່າວ​ໄດ້​​​ຮັບ​ຟັງການແນະ​ນຳຫຼັກ​ສູດ ແລະ
-                                ວິ​ທີ​ດຳ​ເນີນ​ການ​ຈັດ​ການ​ຮຽນ-ການ​ສອນ​ ຈາກ ທ່ານ ບຸນ​ເລື່ອນ ວັນ​ນາ​ຮັກ ຜູ້​ອຳ​ນວຍກ​ານ
-                                ໂຮງ​ຮຽນ​ການ​ເມືອງ ແລະ ການ​ປົກ​ຄອງ​ແຂວງ​ຊຽ​ຂວາງ ແລະ ຍັງ​ໄດ້​ຮັບ​ຟັງ​ການ​ໂອ້​ລົມ,
-                                ມີ​ຄຳ​ຄິດ​ຄຳ​ເຫັນ ແລະ ກ່າວ​ເປີດ​ພິ​ທີ​ຢ່າງ​ເປັນ​ທາງ​ການ​ຈາກ ທ່ານ ບົວ​ສອນ ສີ​ນວນ​ທອງ
-                                ຄະ​ນະ​ປະ​ຈຳ​ພັກ​ແຂວງ ຮອງ​ເຈົ້າ​ແຂວງ ແຂວງ​ຊຽງ​ຂວາງ.
-                                <br>
-                                <div class="">
-                                    <div class="">
-                                        <img src="img/IMG_7408.JPG" alt="" class="img">
-                                    </div>
-                                    <div class="floatleft">
-                                        <img src="img/IMG_7408.JPG" alt="" class="img">
-                                    </div>
-                                    <div class="floatrigth">
-                                        <img src="img/IMG_7408.JPG" alt="" class="img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        &nbsp;
-
-                        <!-- <div class="mycontrol1">
-                            <label>
-
-                                <h1>
-                                    <strong>
-                                        ສະພາບລວມຂອງຫ້ອງ
-                                    </strong>
-                                </h1>
-
-                            </label>
-                            <br>
-                            <div>
-                                Computer or server room location is the first consideration, even before considering
-                                the layout of the room’s contents. Most designers agree that, where possible, the
-                                computer room should not be built where one of its walls is an exterior wall of the
-                                building. Exterior walls can often be quite damp and can contain water pipes that could
-                                burst and drench the equipment. Avoiding exterior windows means avoiding a security
-                                risk, and breakages. Avoiding both the top floors and basements means avoiding
-                                flooding, and leaks in the case of roofs. Lastly, server rooms should be centrally
-                                located because of the horizontal cabling involved which extends from this room to
-                                devices in other rooms. If a centralized computer room is not feasible, server closets
-                                on each floor may be an option. This is where computer, network and phone equipment are
-                                housed in closets and each closet is stacked above each other on the floor that they
-                                service.
-                            </div>
-                        </div>
-                        <hr class="divideLine">
-                        <br>
-                        <div class="mycontrol1">
-                            <label>
-
-                                <h1>
-                                    <strong>
-                                        ຈຸດດີ ແລະ ຈຸດອ່ອນ
-                                    </strong>
-                                </h1>
-
-                            </label>
-                            <div class="mycontrol1">
-                                <label>
-
-                                    <h3>
-                                        <strong>
-                                            ຈຸດດີ
-                                        </strong>
-                                    </h3>
-
-                                </label>
-                                <div>
-                                    I used to live downtown when I worked in finance from 1999-2001 as a fresh college
-                                    grad. My base salary for the first half of the year (started in July) was $40,000.
-                                    Even then I thought $40,000 was pretty low as I could only afford to share a
-                                    $1,800/month studio with a buddy of mine from high school after contributing to my
-                                    401(k). Thankfully our salaries were raised in the second year to $65,000 after
-                                    Wall St. decided to pay new first year analysts $55,000 instead of $40,000. Still,
-                                    a base salary of $65,000 wasn’t much to write home about when one bedroom condos
-                                    were selling for 5X.
-
-                                </div>
-
-                            </div>
-                            <div class="mycontrol1">
-                                <label>
-
-                                    <h3>
-                                        <strong>
-                                            ຈຸດອ່ອນ
-                                        </strong>
-                                    </h3>
-
-                                </label>
-                                <div>
-                                    The cover, which has already broken the Internet, has the Bollywood actor striking
-                                    a flirtatious pose in a blue ruffled dress, as the singer, who is dressed in a
-                                    multi-colour track suit, maintains a poker face.
-                                    <br>
-                                    &nbsp;'The Power of two: Global icons #AishwaryaRaiBachchan and Pharrell Williams
-                                    take
-                                    over our #April2018 issue!' Vogue India captioned the pic, which has already
-                                    received over 50,000 likes.
-
-                                </div>
-
-                            </div>
-                        </div> -->
+                    <div class="main-side" id="showcontent" style=" background-color: rgb(178, 240, 235);">
 
                     </div>
                     <div class="sidebar-rigth">
@@ -301,32 +126,8 @@
                 </div>
             </div>
 
-
         </div>
     </div>
-
-
-
-    <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-
 </body>
 
 </html>
